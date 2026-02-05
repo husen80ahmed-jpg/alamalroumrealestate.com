@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="بوابة رقمية احترافية لعلم الروم العقارية — أصل رقمي جاهز للاقتناء/الشراكة (Brand-safe) لتوجيه العملاء، جمع الطلبات، وتعزيز الظهور." />
-  <title>Alam Al Roum Real Estate — Premium Digital Asset | SnapTheName</title>
+  <meta name="description" content="Alam Al-Roum digital asset bundle (City + RealEstate + Hotels) — brand-safe B2B web assets designed for routing inbound, partner inquiries, and launch-ready campaign hubs. Listed via SnapTheName." />
+  <title>Alam Al-Roum Digital Asset Bundle (3 Domains) | SnapTheName</title>
 
   <style>
     :root{
@@ -14,8 +14,8 @@
       --text:rgba(255,255,255,.92);
       --muted:rgba(255,255,255,.68);
       --line:rgba(255,255,255,.12);
-      --accent:#43D3FF;  /* tech-cyan */
-      --accent2:#FFB86B; /* premium-amber */
+      --accent:#43D3FF;
+      --accent2:#FFB86B;
       --good:#43ffb1;
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --radius:18px;
@@ -29,9 +29,9 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
       background:
-        radial-gradient(1200px 700px at 12% 10%, rgba(67,211,255,.16), transparent 60%),
-        radial-gradient(900px 600px at 88% 18%, rgba(255,184,107,.14), transparent 60%),
-        radial-gradient(900px 600px at 50% 92%, rgba(67,255,177,.08), transparent 55%),
+        radial-gradient(1200px 700px at 14% 10%, rgba(67,211,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 84% 18%, rgba(255,184,107,.14), transparent 60%),
+        radial-gradient(800px 600px at 50% 90%, rgba(67,255,177,.08), transparent 55%),
         linear-gradient(180deg, #050711 0%, #050711 40%, #060A14 100%);
       overflow-x:hidden;
     }
@@ -45,47 +45,34 @@
     }
     .nav{
       display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:14px;
-      flex-wrap:wrap;
+      padding:14px 0; gap:14px; flex-wrap:wrap;
     }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width: 260px;
-      flex: 1;
-    }
+    .brand{display:flex; align-items:center; gap:10px; min-width:280px;}
     .logo{
-      width:38px; height:38px; border-radius:13px;
+      width:36px; height:36px; border-radius:12px;
       background:
         radial-gradient(circle at 30% 30%, rgba(67,211,255,.9), transparent 55%),
         radial-gradient(circle at 70% 70%, rgba(255,184,107,.85), transparent 55%),
         rgba(255,255,255,.06);
       border:1px solid rgba(255,255,255,.12);
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      position:relative; overflow:hidden;
     }
-    .brand h1{
-      margin:0;
-      font-size:14px;
-      letter-spacing:.2px;
-      font-weight:750;
-      line-height:1.2;
+    .logo:after{
+      content:"STN";
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900; letter-spacing:.7px;
+      color:rgba(255,255,255,.86);
+      font-size:11px;
     }
-    .brand .sub{
-      display:block;
-      font-size:12px;
-      color:var(--muted);
-      font-weight:600;
-      margin-top:2px;
-    }
-    .navlinks{
-      display:flex; gap:10px; align-items:center;
-      flex-wrap:wrap; justify-content:flex-end;
-    }
+    .brand h1{margin:0; font-size:13px; letter-spacing:.35px; font-weight:800; line-height:1.2;}
+    .brand .sub{display:block; font-size:12px; color:var(--muted); font-weight:650; margin-top:3px;}
+
+    .navlinks{display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
     .navlinks a{
-      font-size:13px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:12px;
+      font-size:13px; color:var(--muted);
+      padding:8px 10px; border-radius:12px;
       border:1px solid transparent;
     }
     .navlinks a:hover{
@@ -93,46 +80,41 @@
       background:rgba(255,255,255,.05);
       border-color:rgba(255,255,255,.10);
     }
+
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; padding:10px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.16);
+      background: linear-gradient(135deg, rgba(67,211,255,.16), rgba(255,184,107,.12));
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+      font-weight:900; font-size:13px; white-space:nowrap;
+    }
+    .cta:hover{transform: translateY(-1px)}
+    .cta:active{transform: translateY(0px)}
+
     .pill{
       display:inline-flex; align-items:center; gap:8px;
-      padding:7px 10px;
-      border-radius:999px;
+      padding:6px 10px; border-radius:999px;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.05);
-      color:rgba(255,255,255,.82);
-      font-size:12px;
-      font-weight:750;
-      white-space:nowrap;
+      color:rgba(255,255,255,.80);
+      font-size:12px; font-weight:780;
     }
     .dot{
       width:8px;height:8px;border-radius:999px;
       background: linear-gradient(180deg, var(--accent), var(--accent2));
       box-shadow: 0 0 18px rgba(67,211,255,.45);
     }
-    .cta{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:10px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.16);
-      background: linear-gradient(135deg, rgba(67,211,255,.16), rgba(255,184,107,.12));
-      box-shadow: 0 14px 40px rgba(0,0,0,.35);
-      font-weight:800;
-      font-size:13px;
-      color:var(--text);
-      white-space:nowrap;
-    }
-    .cta:hover{transform: translateY(-1px)}
-    .cta:active{transform: translateY(0px)}
 
     header.hero{padding:54px 0 26px;}
     .grid-hero{
       display:grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap:16px;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
       align-items:stretch;
     }
-    @media (max-width: 980px){ .grid-hero{grid-template-columns:1fr;} }
+    @media (max-width: 980px){ .grid-hero{grid-template-columns:1fr;} .brand{min-width:auto;} }
 
     .hero-card{
       border-radius: var(--radius2);
@@ -153,29 +135,10 @@
     }
     .hero-card > *{position:relative}
 
-    .kicker{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      font-size:12px;
-      color:rgba(255,255,255,.88);
-      font-weight:800;
-      white-space:nowrap;
-    }
-    .domain{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-weight:900;
-      letter-spacing:.3px;
-    }
-
     .hero-title{
-      font-size:40px;
-      line-height:1.06;
+      font-size:40px; line-height:1.05;
       margin:14px 0 10px;
-      letter-spacing:-.6px;
+      letter-spacing:-.8px;
     }
     @media (max-width:520px){ .hero-title{font-size:32px} }
 
@@ -183,23 +146,19 @@
       margin:0 0 14px;
       color:var(--muted);
       font-size:15px;
-      line-height:1.75;
-      max-width:78ch;
+      line-height:1.7;
+      max-width:85ch;
     }
-    .hero-actions{
-      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
-      margin-top:14px;
-    }
+
+    .hero-actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:14px;}
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:11px 14px;
+      gap:10px; padding:11px 14px;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.05);
       color:var(--text);
-      font-weight:850;
-      font-size:13px;
+      font-weight:900; font-size:13px;
       cursor:pointer;
     }
     .btn.primary{
@@ -215,19 +174,16 @@
       border-radius:14px;
       border:1px solid rgba(67,255,177,.22);
       background: linear-gradient(135deg, rgba(67,255,177,.14), rgba(255,255,255,.03));
-      font-weight:950;
-      font-size:13px;
-      white-space:nowrap;
+      font-weight:950; font-size:13px;
     }
 
     .mini{
       margin-top:14px;
-      display:flex;
-      gap:10px; flex-wrap:wrap;
-      color:var(--muted);
-      font-size:12px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted); font-size:12px;
     }
-    .mini span{padding:6px 10px;border:1px solid rgba(255,255,255,.10);border-radius:999px;background:rgba(255,255,255,.04);}
+    .mini span{display:inline-flex; gap:8px; align-items:center}
+    .mini span:before{content:"✓"; color:rgba(67,255,177,.9); font-weight:950}
 
     .side-card{
       border-radius: var(--radius2);
@@ -236,6 +192,7 @@
       box-shadow: var(--shadow);
       padding:18px;
     }
+
     .kpis{display:grid; gap:10px;}
     .kpi{
       border:1px solid rgba(255,255,255,.10);
@@ -246,30 +203,33 @@
       align-items:flex-start;
     }
     .kpi strong{display:block; font-size:13px}
-    .kpi span{display:block; font-size:12px; color:var(--muted); margin-top:2px; line-height:1.55}
+    .kpi span{display:block; font-size:12px; color:var(--muted); margin-top:2px; line-height:1.45}
     .kpi .tag{
-      font-size:11px; font-weight:900;
-      color:rgba(255,255,255,.9);
-      padding:6px 9px;
-      border-radius:999px;
+      font-size:11px; font-weight:950;
+      color:rgba(255,255,255,.88);
+      padding:6px 9px; border-radius:999px;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.05);
       white-space:nowrap;
     }
+    .divider{height:1px; background:var(--line); margin:18px 0}
+
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      font-size:12px; color:rgba(255,255,255,.86);
+      font-weight:900;
+    }
+    .domain{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-weight:950; letter-spacing:.35px;
+    }
 
     section{padding:26px 0}
-    .section-title{
-      font-size:18px;
-      margin:0 0 6px;
-      letter-spacing:-.2px;
-    }
-    .section-sub{
-      margin:0 0 14px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.75;
-      max-width:92ch;
-    }
+    .section-title{font-size:18px; margin:0 0 6px; letter-spacing:-.2px;}
+    .section-sub{margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.7; max-width:95ch;}
 
     .cards{
       display:grid;
@@ -296,34 +256,25 @@
     }
     .card > *{position:relative}
     .card h3{margin:0 0 6px; font-size:16px}
-    .card p{margin:0 0 10px; color:var(--muted); font-size:13px; line-height:1.75}
-
-    .bullets{margin:0; padding-right:18px; color:rgba(255,255,255,.88); font-size:13px; line-height:1.65}
+    .card p{margin:0 0 10px; color:var(--muted); font-size:13px; line-height:1.7}
+    .bullets{margin:0; padding-left:18px; color:rgba(255,255,255,.88); font-size:13px; line-height:1.65}
     .bullets li{margin:6px 0}
-
     .actions{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-    .select{
+    .btn.select{
       border-color: rgba(255,184,107,.22);
       background: linear-gradient(135deg, rgba(255,184,107,.16), rgba(67,211,255,.10));
     }
 
-    .proof{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-    }
+    .proof{display:grid; grid-template-columns: 1fr 1fr; gap:14px;}
     @media (max-width: 980px){ .proof{grid-template-columns:1fr} }
-
     .note{
       border-radius: var(--radius);
       border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.04);
       padding:16px;
     }
-    .note .small{color:var(--muted); font-size:12px; line-height:1.8; margin:0}
     .note strong{display:block; margin:0 0 6px; font-size:13px}
-
-    .divider{height:1px; background:var(--line); margin:18px 0}
+    .note .small{color:var(--muted); font-size:12px; line-height:1.75; margin:0}
 
     .acq{
       border-radius: var(--radius2);
@@ -332,24 +283,14 @@
       padding:18px;
       box-shadow: var(--shadow);
     }
-    .acq-grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-      align-items:start;
-    }
+    .acq-grid{display:grid; grid-template-columns: 1fr 1fr; gap:14px; align-items:start;}
     @media (max-width: 980px){ .acq-grid{grid-template-columns:1fr} }
 
-    .fine{
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.8;
-      margin:10px 0 0;
-    }
+    .fine{color:var(--muted); font-size:12px; line-height:1.8; margin:10px 0 0;}
 
     .contact{
       display:grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1fr 1fr;
       gap:14px;
       align-items:start;
     }
@@ -373,26 +314,11 @@
       outline:none;
       font-size:13px;
     }
-    textarea{min-height:130px; resize:vertical}
+    textarea{min-height:120px; resize:vertical}
     .row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
     @media (max-width: 520px){ .row{grid-template-columns:1fr} }
 
-    .contactline{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:8px;
-      margin-top:10px;
-    }
-    .contactbtn{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px;
-      padding:12px 12px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-    }
-    .contactbtn small{color:var(--muted); font-size:12px}
-    .mutedlink{color:rgba(255,255,255,.82); text-decoration:underline; text-underline-offset:3px}
+    .mutedlink{color:rgba(255,255,255,.78); text-decoration:underline; text-underline-offset:3px}
 
     .footer{
       padding:22px 0 34px;
@@ -412,16 +338,16 @@
         <div class="brand">
           <div class="logo" aria-hidden="true"></div>
           <div>
-            <h1>Alam Al Roum Real Estate Presence <span class="sub">Listed on SnapTheName • أصل رقمي B2B جاهز للاقتناء/الشراكة</span></h1>
+            <h1>Alam Al-Roum Bundle <span class="sub">Private B2B listing • 3-domain system • Listed via SnapTheName</span></h1>
           </div>
         </div>
 
         <div class="navlinks">
-          <a href="#usecases">الاستخدامات</a>
-          <a href="#proof">لماذا الآن</a>
-          <a href="#acquire">الاقتناء</a>
-          <a href="https://snapthename.com" target="_blank" rel="noopener" class="pill"><span class="dot"></span> SnapTheName</a>
-          <a class="cta" href="#contact" id="topCta">اطلب التواصل مع المالك</a>
+          <a href="#bundle">Bundle</a>
+          <a href="#usecases">Use cases</a>
+          <a href="#proof">Why now</a>
+          <a href="#transfer">Transfer</a>
+          <a class="cta" href="#contact" id="topCta">Request decision-owner routing</a>
         </div>
       </div>
     </div>
@@ -432,197 +358,279 @@
     <div class="wrap">
       <div class="grid-hero">
         <div class="hero-card">
-          <div class="kicker">
-            <span class="pill"><span class="dot"></span> قيمة أولاً • خطوة واحدة واضحة</span>
-            <span class="badge"><span class="domain">alamalroumrealestate.com</span></span>
-          </div>
+          <span class="pill"><span class="dot"></span> Value first • One next step • Brand-safe</span>
 
-          <h2 class="hero-title">اسم واحد… يختصر حضور “علم الروم” العقاري.</h2>
+          <h2 class="hero-title">
+            One bundle to control<br/>
+            Alam Al-Roum inbound.
+          </h2>
 
           <p class="hero-lead">
-            إذا كنت مطوّرًا، وسيطًا كبيرًا، منصة عقارية، أو فريق مبيعات لمشروع/مرحلة على الساحل،
-            فغالبًا تحتاج نقطة دخول واحدة: تُعرّف المنطقة/المشروع، وتجمع الطلبات، وتوجّه العميل للفريق الصحيح.
-            هذا الأصل الرقمي مصمم ليُستخدم كـ <strong>بوابة مشاريع</strong> أو <strong>صفحة توجيه Leads</strong> أو <strong>دليل خدمات موثّق</strong> —
-            بدون ادّعاء أنه موقع رسمي لأي جهة (Brand-safe).
+            When a destination gains attention, inbound fragments: buyers, brokers, partners, operators, suppliers, and media.
+            This is a <strong>brand-safe 3-domain system</strong> designed to route high-intent inquiries to the correct team (Digital/Brand, Commercial, Partnerships) and reduce lead leakage.
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#usecases">شوف 3 تموضعات جاهزة</a>
-            <a class="btn" href="#contact">تواصل مع المالك</a>
-            <a class="whats" id="waTop" href="#" rel="noopener">واتساب</a>
+            <a class="btn primary" href="#bundle">See the 3-domain bundle</a>
+            <a class="btn" href="#contact">Talk to the owner</a>
+            <a class="whats" id="waTop" href="#" rel="noopener">WhatsApp</a>
           </div>
 
           <div class="mini">
-            <span>✓ كلمة بحث عالية النية</span>
-            <span>✓ مناسب SEO + حملات Leads</span>
-            <span>✓ يمنع تسريب العملاء وشتات الرسائل</span>
-            <span>✓ يصلح كـ Project Hub / Directory</span>
+            <span>Built for B2B evaluation</span>
+            <span>Routing + partner screening</span>
+            <span>Clean registrar transfer / escrow option</span>
           </div>
+
+          <p class="fine">
+            Disclaimer: This is a private digital asset listing for evaluation only. It does not present itself as an official website for any entity, and it is <strong>not affiliated</strong> with any operator unless acquired and rebranded by the buyer.
+          </p>
         </div>
 
         <aside class="side-card">
-          <h3 style="margin:0 0 10px; font-size:15px;">ملخص سريع</h3>
+          <h3 style="margin:0 0 10px; font-size:15px;">At a glance</h3>
 
           <div class="kpis">
             <div class="kpi">
               <div>
-                <strong>النتيجة الأساسية</strong>
-                <span>جمع الطلبات + توجيه الاستفسارات للفريق الصحيح (مبيعات/تسويق/شراكات).</span>
+                <strong>Outcome</strong>
+                <span>Structured inbound + faster routing to the right decision owner.</span>
               </div>
               <div class="tag">B2B</div>
             </div>
             <div class="kpi">
               <div>
-                <strong>3 استخدامات جاهزة</strong>
-                <span>بوابة مشاريع • دليل خدمات • صفحة توجيه</span>
+                <strong>Best-fit teams</strong>
+                <span>Digital/Brand • Commercial • Partnerships • Ops</span>
               </div>
-              <div class="tag">مرن</div>
+              <div class="tag">Routing</div>
             </div>
             <div class="kpi">
               <div>
-                <strong>خطوة واحدة</strong>
-                <span>اطلب “صاحب القرار” الخاص بالأصول الرقمية/البراند/المبيعات.</span>
+                <strong>One next step</strong>
+                <span>Request decision-owner contact for evaluation.</span>
               </div>
-              <div class="tag">Low-friction</div>
+              <div class="tag">Low friction</div>
             </div>
           </div>
 
           <div class="divider"></div>
 
           <p class="section-sub" style="margin:0;">
-            <span class="badge">Listed on <strong>SnapTheName</strong></span>
+            Bundle assets:
+            <span class="badge"><span class="domain">AlamAlRoumCity.com</span></span>
+            <span class="badge"><span class="domain">AlamAlRoumRealEstate.com</span></span>
+            <span class="badge"><span class="domain">AlamAlRoumHotels.com</span></span>
           </p>
+
           <p class="fine">
-            تنبيه: هذه صفحة عرض أصل رقمي خاص (Private listing) وغير تابعة لأي مطوّر أو جهة ما لم يتم اقتناؤه رسميًا.
+            Listed via <strong>SnapTheName</strong> • Designed for evaluation & routing only.
           </p>
         </aside>
       </div>
     </div>
   </header>
 
-  <!-- Use cases -->
-  <section id="usecases">
+  <!-- Bundle -->
+  <section id="bundle">
     <div class="wrap">
-      <h2 class="section-title">اختر التمركز المناسب</h2>
+      <h2 class="section-title">The 3-domain bundle (works as a system)</h2>
       <p class="section-sub">
-        نفس الدومين… 3 قصص مختلفة حسب دورك (مطوّر/وسيط/منصة). اضغط “اختيار” لملء رسالة التواصل تلقائيًا.
+        You’re not acquiring “a name”. You’re evaluating a <strong>routing system</strong> that matches intent and reduces leakage across channels.
       </p>
 
       <div class="cards">
         <div class="card">
-          <h3>1) Project / Phase Hub</h3>
-          <p>صفحة مشروع/مرحلة: مواصفات، بروشورات، خرائط، وأسئلة شائعة — مع تحويل طلبات الشراء للفريق.</p>
+          <h3><span class="domain">AlamAlRoumCity.com</span></h3>
+          <p>Neutral “city / destination” gateway for media, suppliers, and general inquiries.</p>
           <ul class="bullets">
-            <li>وحدات + أسعار/خطط سداد (حسب سياسة المالك)</li>
-            <li>تحميل بروشور + CTA للمعاينة/الحجز</li>
-            <li>Brand-safe: لا ادعاء “رسمي” قبل الاقتناء</li>
+            <li>Project overview + routing</li>
+            <li>Press / updates module (optional)</li>
+            <li>Partner & supplier screening</li>
           </ul>
           <div class="actions">
-            <button class="btn select" data-usecase="Project / Phase Hub">اختيار</button>
-            <a class="btn" href="#contact">اطلب تواصل المالك</a>
+            <button class="btn select" data-usecase="Bundle — City Gateway">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
           </div>
         </div>
 
         <div class="card">
-          <h3>2) Lead Routing Page</h3>
-          <p>صفحة توجيه استفسارات: تقلل “الضياع” وتحول العميل للفريق الصحيح بسرعة.</p>
+          <h3><span class="domain">AlamAlRoumRealEstate.com</span></h3>
+          <p>High-intent real-estate inbound: buyers, investors, brokers — structured and routed.</p>
           <ul class="bullets">
-            <li>Routing حسب نوع الطلب (شراء/شراكة/تسويق)</li>
-            <li>نماذج قصيرة + واتساب + مكالمات</li>
-            <li>مناسب لحملات Meta/Google عالية النية</li>
+            <li>Sales / leasing inquiry routing</li>
+            <li>Lead capture + assignment</li>
+            <li>Anti-noise (filters & forms)</li>
           </ul>
           <div class="actions">
-            <button class="btn select" data-usecase="Lead Routing Page">اختيار</button>
-            <a class="btn" href="#contact">اطلب تواصل المالك</a>
+            <button class="btn select" data-usecase="Bundle — Real Estate Inbound">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
           </div>
         </div>
 
         <div class="card">
-          <h3>3) Verified Real Estate Directory</h3>
-          <p>دليل خدمات عقارية للمنطقة: وسطاء/تقييم/تشطيب/إدارة أملاك — مع طلب عروض أسعار.</p>
+          <h3><span class="domain">AlamAlRoumHotels.com</span></h3>
+          <p>Hospitality intent: operators, brands, reservations partners — future-proof.</p>
           <ul class="bullets">
-            <li>قوائم موثّقة + تصنيفات (Broker / Rental / Resale)</li>
-            <li>نموذج “Request a quote” لتجميع Leads</li>
-            <li>يعظم SEO على كلمة المنطقة</li>
+            <li>Hotel / resort partner routing</li>
+            <li>Operator / brand inquiries</li>
+            <li>Directory / booking hub option</li>
           </ul>
           <div class="actions">
-            <button class="btn select" data-usecase="Verified Directory">اختيار</button>
-            <a class="btn" href="#contact">اطلب تواصل المالك</a>
+            <button class="btn select" data-usecase="Bundle — Hotels & Operators">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="proof">
+        <div class="note">
+          <strong>Why a bundle beats a single domain</strong>
+          <p class="small">
+            Different stakeholders search different intent words. A 3-domain system lets you route each intent to the correct team
+            (Brand/Digital, Commercial, Partnerships, Ops) without confusion.
+          </p>
+        </div>
+        <div class="note">
+          <strong>What you can do day-1 (post-acquisition)</strong>
+          <p class="small">
+            Keep them neutral (brand-safe), or brand them officially. Either way, the routing structure reduces leakage and speeds responses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="usecases">
+    <div class="wrap">
+      <h2 class="section-title">Choose a positioning (system-level)</h2>
+      <p class="section-sub">
+        Same bundle, three professional positioning options. Click “Select” to prefill your inquiry message.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>1) Controlled Gateway System</h3>
+          <p>One unified entry layer across City + RealEstate + Hotels, with routing to the correct team.</p>
+          <ul class="bullets">
+            <li>Reduce misrouted inbound</li>
+            <li>Lower “inbox noise”</li>
+            <li>Faster response ownership</li>
+          </ul>
+          <div class="actions">
+            <button class="btn select" data-usecase="Controlled Gateway System">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>2) Verified Partner Layer</h3>
+          <p>Directory-style layer for approved brokers, operators, and suppliers with screened inquiries.</p>
+          <ul class="bullets">
+            <li>Verified listings + routing</li>
+            <li>Reduce fake/duplicate pages</li>
+            <li>Capture high-intent searches</li>
+          </ul>
+          <div class="actions">
+            <button class="btn select" data-usecase="Verified Partner Layer">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>3) Campaign / Launch Stack</h3>
+          <p>Launch-ready landing stack for announcements, phases, leasing, operator onboarding, and PR.</p>
+          <ul class="bullets">
+            <li>One-page briefs per intent</li>
+            <li>Lead capture + team assignment</li>
+            <li>Optional: brochure routing</li>
+          </ul>
+          <div class="actions">
+            <button class="btn select" data-usecase="Campaign / Launch Stack">Select</button>
+            <a class="btn" href="#contact">Request routing</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Proof -->
+  <!-- Why now -->
   <section id="proof">
     <div class="wrap">
-      <h2 class="section-title">ليه الأصل ده “عملي” مش مجرد اسم؟</h2>
+      <h2 class="section-title">Why now</h2>
       <p class="section-sub">
-        اللي يشتري صح هنا مش بيشتري حروف… بيشتري “اختصار طريق” للبحث، وثقة، وتوجيه رسائل، وجمع طلبات قابلة للقياس.
+        The hidden cost of attention isn’t marketing — it’s misrouted inbound. A controlled gateway system reduces friction and improves inquiry quality.
       </p>
 
       <div class="proof">
         <div class="note">
-          <strong>تقليل ضياع العملاء</strong>
-          <p class="small">وجود بوابة واحدة يقلل رسائل “مين المسؤول؟” ويمنع فقد فرص بسبب تحويلات خاطئة.</p>
+          <strong>Signal 1: attention creates noise</strong>
+          <p class="small">As attention grows, inbound spreads across random pages and DMs. A routing layer keeps it structured.</p>
         </div>
         <div class="note">
-          <strong>نية بحث عالية</strong>
-          <p class="small">اسم المنطقة + Real Estate = بحث أقرب للشراء/الاستثمار (مناسب SEO وحملات Leads).</p>
+          <strong>Signal 2: brand safety matters</strong>
+          <p class="small">Neutral, intent-matching domains support presence without impersonation. Official branding can follow buyer review.</p>
         </div>
         <div class="note">
-          <strong>Brand-safe</strong>
-          <p class="small">الصفحة لا تدّعي الانتماء لأي مطوّر. بعد الاقتناء: يتم إعادة صياغة الهوية حسب المالك.</p>
+          <strong>Signal 3: speed beats back-and-forth</strong>
+          <p class="small">Routing clarifies who owns what, reducing internal confusion and response delays.</p>
         </div>
         <div class="note">
-          <strong>أفضل من تُراسل؟</strong>
-          <p class="small">Digital/Brand • Commercial/Sales • Partnerships • IT (Web assets).</p>
+          <strong>Best-fit owners to route to</strong>
+          <p class="small">Digital/Brand, Commercial, Partnerships, Ops, or IT (web assets). The goal: reach the right decision owner.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Acquisition -->
-  <section id="acquire">
+  <!-- Transfer -->
+  <section id="transfer">
     <div class="wrap">
       <div class="acq">
         <div class="acq-grid">
           <div>
-            <h2 class="section-title" style="margin-top:0;">جاهز للاقتناء / الشراكة</h2>
+            <h2 class="section-title" style="margin-top:0;">Evaluation & transfer (bundle)</h2>
             <p class="section-sub" style="margin-bottom:10px;">
-              الأصل: <span class="badge"><span class="domain">alamalroumrealestate.com</span></span>
+              Assets:
+              <span class="badge"><span class="domain">AlamAlRoumCity.com</span></span>
+              <span class="badge"><span class="domain">AlamAlRoumRealEstate.com</span></span>
+              <span class="badge"><span class="domain">AlamAlRoumHotels.com</span></span>
+              <span class="badge">Listed via <strong>SnapTheName</strong></span>
             </p>
 
             <ul class="bullets">
-              <li><strong>أفضل لِـ:</strong> مطوّر/وسيط كبير/منصة عقارية/فريق تسويق مشروع</li>
-              <li><strong>التموضع:</strong> Project Hub • Lead Routing • Directory</li>
-              <li><strong>الخطوة التالية:</strong> اطلب تواصل صاحب القرار لتقييم الاقتناء</li>
+              <li>Best for: developer / commercial team / real-estate platform / hospitality operator</li>
+              <li>Bundle value: intent coverage + routing control + future-proof expansion</li>
+              <li>Next step: request routing to the decision owner (Digital/Brand or Commercial)</li>
             </ul>
 
             <p class="fine">
-              *نقطة مهمة:* الصفحة دي “Private listing” — الهدف توصيلك لصاحب القرار وتقديم الأصل بشكل محترم قبل ذكر أي تفاصيل تفاوضية.
+              Note: This page is a private B2B evaluation listing. It is <strong>not affiliated</strong> with any operator unless acquired and rebranded by the buyer.
             </p>
           </div>
 
           <div>
-            <strong style="display:block; margin:0 0 8px;">بعد تواصلك ستحصل على</strong>
+            <strong style="display:block; margin:0 0 8px;">What you can request</strong>
             <div class="note" style="margin-bottom:10px;">
               <p class="small" style="margin:0;">
-                • تأكيد الملكية بسرعة<br/>
-                • خيارات نقل آمنة (Registrar / Escrow-ready)<br/>
-                • (اختياري) صفحة هبوط “مُعاد تموضعها” باسم المالك خلال 24–48 ساعة
+                • Proof of ownership (on request)<br/>
+                • Registrar transfer options (push / auth code)<br/>
+                • Optional escrow for both parties<br/>
+                • Optional: post-acquisition routing setup (brand-safe)
               </p>
             </div>
 
             <a class="btn primary" href="#contact" style="width:100%; justify-content:center;">
-              اطلب التواصل مع المالك
+              Request decision-owner routing
             </a>
 
             <p class="fine" style="margin-top:10px;">
-              تفضّل واتساب؟ الزر سيضيف “التموضع المختار” تلقائيًا.
+              Prefer WhatsApp? Your selected positioning will be included automatically.
             </p>
-            <a class="whats" id="waAcquire" href="#" rel="noopener" style="width:100%; justify-content:center;">واتساب المالك</a>
+            <a class="whats" id="waTransfer" href="#" rel="noopener" style="width:100%; justify-content:center;">WhatsApp the owner</a>
           </div>
         </div>
       </div>
@@ -632,110 +640,86 @@
   <!-- Contact -->
   <section id="contact">
     <div class="wrap">
-      <h2 class="section-title">تواصل مع المالك</h2>
+      <h2 class="section-title">Contact the owner (one step)</h2>
       <p class="section-sub">
-        خطوة واحدة: اكتب نوع جهتك + اختر تموضع + اطلب “صاحب القرار” لتقييم الاقتناء.
+        Send an inquiry to be routed to the correct owner contact for evaluation. Keep it simple: who you are, what you do, and which positioning you prefer.
       </p>
 
       <div class="contact">
         <div class="form">
           <div class="row">
             <div>
-              <label for="company">اسم الجهة / الشركة</label>
-              <input id="company" type="text" placeholder="مثال: مطوّر • وسيط رئيسي • منصة عقارية" />
+              <label for="company">Company / Organization</label>
+              <input id="company" type="text" placeholder="e.g., Developer / Platform / Operator / Commercial team" />
             </div>
             <div>
-              <label for="name">اسمك</label>
-              <input id="name" type="text" placeholder="الاسم بالكامل" />
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="Your full name" />
             </div>
           </div>
 
           <div class="row">
             <div>
-              <label for="email">إيميلك</label>
+              <label for="email">Your email</label>
               <input id="email" type="email" placeholder="name@company.com" />
             </div>
             <div>
-              <label for="usecase">التموضع المختار</label>
+              <label for="usecase">Selected positioning</label>
               <select id="usecase">
-                <option value="Not specified">غير محدد</option>
-                <option value="Project / Phase Hub">Project / Phase Hub</option>
-                <option value="Lead Routing Page">Lead Routing Page</option>
-                <option value="Verified Directory">Verified Directory</option>
+                <option value="Not specified">Not specified</option>
+                <option value="Controlled Gateway System">Controlled Gateway System</option>
+                <option value="Verified Partner Layer">Verified Partner Layer</option>
+                <option value="Campaign / Launch Stack">Campaign / Launch Stack</option>
+                <option value="Bundle — City Gateway">Bundle — City Gateway</option>
+                <option value="Bundle — Real Estate Inbound">Bundle — Real Estate Inbound</option>
+                <option value="Bundle — Hotels & Operators">Bundle — Hotels & Operators</option>
               </select>
             </div>
           </div>
 
-          <label for="msg">الرسالة</label>
-          <textarea id="msg">Hello Hussein,
-I’m trying to reach the right decision-owner responsible for digital/brand web assets for “Alam Al Roum” real estate presence.
-Could you direct me to the appropriate contact (Digital/Brand/Sales/Partnerships/IT) to evaluate acquisition or partnership?
+          <label for="msg">Message</label>
+          <textarea id="msg">Hi Hussein,
+I’m trying to reach the right decision owner responsible for brand/digital web assets related to Alam Al-Roum.
+Could you direct me to the appropriate contact (Digital/Brand or Commercial) to evaluate a brand-safe web asset bundle (3 domains) designed for routing inbound inquiries?
 
 Thank you,</textarea>
 
           <div class="actions" style="margin-top:12px;">
-            <a class="btn primary" id="sendEmail" href="#">إرسال عبر الإيميل</a>
-            <a class="btn" id="callNow" href="#">اتصال الآن</a>
-            <a class="btn" id="copyText" href="#">نسخ الرسالة</a>
+            <a class="btn primary" id="sendEmail" href="#">Send via Email</a>
+            <a class="btn" id="copyText" href="#">Copy message</a>
           </div>
 
           <p class="fine">
-            ملاحظة: هذه الصفحة “Listed on SnapTheName” لتقديم الأصل بشكل Brand-safe وتسهيل توجيه الطلبات.
+            Or contact directly:<br/>
+            Phone/Calls: <a class="mutedlink" href="tel:+201000001802">+201000001802</a> &nbsp;•&nbsp;
+            WhatsApp: <a class="mutedlink" href="#" id="waInline">Open WhatsApp</a><br/>
+            Email: <a class="mutedlink" href="mailto:hussein.lashin@snapthename.com">hussein.lashin@snapthename.com</a>
           </p>
         </div>
 
         <div class="note">
-          <strong>قائمة سريعة للحصول على رد أسرع</strong>
+          <strong>Fast routing checklist (best response)</strong>
           <p class="small" style="margin:0;">
-            1) اذكر نوع جهتك (Developer / Broker / Platform).<br/>
-            2) اختر تموضع واحد فقط.<br/>
-            3) اطلب “صاحب القرار” (Digital/Brand/Sales/IT).<br/><br/>
-            ده يقلل “ضوضاء بيع الدومينات” ويخليها تقييم أصل عملي.
+            1) Mention your organization type (developer / platform / operator).<br/>
+            2) Choose one positioning (gateway / verified partner / launch stack).<br/>
+            3) Ask for the decision owner (Digital/Brand or Commercial).<br/><br/>
+            This keeps it professional and avoids “domain trading” noise.
           </p>
 
           <div class="divider"></div>
 
-          <strong>بيانات المالك (مكالمات / واتساب / إيميل)</strong>
-          <div class="contactline">
-            <div class="contactbtn">
-              <div>
-                <small>Phone / Calls</small><br/>
-                <a class="mutedlink" id="phoneLink" href="tel:+201000001802">+201000001802</a>
-              </div>
-              <span class="badge">Calls</span>
-            </div>
-
-            <div class="contactbtn">
-              <div>
-                <small>WhatsApp</small><br/>
-                <a class="mutedlink" id="waDirect" href="#" rel="noopener">Open WhatsApp</a>
-              </div>
-              <span class="badge">WA</span>
-            </div>
-
-            <div class="contactbtn">
-              <div>
-                <small>Email</small><br/>
-                <a class="mutedlink" id="emailLink" href="mailto:hussein.lashin@snapthename.com">hussein.lashin@snapthename.com</a>
-              </div>
-              <span class="badge">Mail</span>
-            </div>
-
-            <div class="contactbtn">
-              <div>
-                <small>Listed on</small><br/>
-                <a class="mutedlink" href="https://snapthename.com" target="_blank" rel="noopener">snapthename.com</a>
-              </div>
-              <span class="badge">Brand</span>
-            </div>
-          </div>
+          <strong>Listed via SnapTheName</strong>
+          <p class="small" style="margin:0;">
+            Private B2B listing designed for evaluation and routing only.
+          </p>
 
           <div class="divider"></div>
 
-          <strong>Disclaimer</strong>
+          <strong>Owner details</strong>
           <p class="small" style="margin:0;">
-            Private digital asset listing. Not affiliated with any developer/operator unless acquired.
-            Any official use is subject to legal/branding review by the buyer.
+            Hussein Laashin<br/>
+            <a class="mutedlink" href="mailto:hussein.lashin@snapthename.com">hussein.lashin@snapthename.com</a><br/>
+            <a class="mutedlink" href="tel:+201000001802">+201000001802</a>
           </p>
         </div>
       </div>
@@ -743,26 +727,28 @@ Thank you,</textarea>
   </section>
 
   <div class="footer">
-    © <span id="yr"></span> • Private digital asset listing • Powered by
-    <a class="mutedlink" href="https://snapthename.com" target="_blank" rel="noopener">SnapTheName</a>
-    • Designed for B2B evaluation and routing.
+    © <span id="yr"></span> • Private B2B listing • 3-domain bundle • Listed via <strong>SnapTheName</strong> • Evaluation & routing only.
   </div>
 
   <script>
     // === Owner contacts (edit if needed) ===
-    const OWNER_NAME  = "Hussein Laashin";
     const OWNER_PHONE = "+201000001802";
     const OWNER_EMAIL = "hussein.lashin@snapthename.com";
-    const BRAND_SITE  = "https://snapthename.com";
-    const ASSET       = "alamalroumrealestate.com";
+    const MARKETPLACE = "SnapTheName";
 
-    // Helpers
+    // Bundle assets
+    const ASSETS = [
+      "AlamAlRoumCity.com",
+      "AlamAlRoumRealEstate.com",
+      "AlamAlRoumHotels.com"
+    ];
+
     const $ = (id) => document.getElementById(id);
     const enc = encodeURIComponent;
 
     function buildSubject(usecase){
-      const u = usecase && usecase !== "Not specified" ? usecase : "Inquiry";
-      return `Alam Al Roum Real Estate Presence — ${u} — ${ASSET}`;
+      const uc = usecase && usecase !== "Not specified" ? usecase : "Evaluation";
+      return `Alam Al-Roum — ${uc} — 3-Domain Bundle (${MARKETPLACE})`;
     }
 
     function buildBody(){
@@ -770,7 +756,6 @@ Thank you,</textarea>
       const name = $("name").value.trim();
       const fromEmail = $("email").value.trim();
       const usecase = $("usecase").value;
-
       const msg = $("msg").value.trim();
 
       const footer = [
@@ -779,34 +764,32 @@ Thank you,</textarea>
         company ? `Company: ${company}` : null,
         name ? `Name: ${name}` : null,
         fromEmail ? `Email: ${fromEmail}` : null,
-        `Selected use-case: ${usecase}`,
-        `Asset: ${ASSET}`,
-        `Listed on: ${BRAND_SITE}`
+        `Selected positioning: ${usecase}`,
+        `Bundle assets: ${ASSETS.join(" • ")}`,
+        `Listed via: ${MARKETPLACE}`
       ].filter(Boolean).join("\n");
 
       return msg + "\n" + footer;
     }
 
     function updateMailto(){
-      const usecase = $("usecase").value || "Not specified";
+      const usecase = $("usecase").value || "Evaluation";
       const subject = buildSubject(usecase);
       const body = buildBody();
       $("sendEmail").href = `mailto:${OWNER_EMAIL}?subject=${enc(subject)}&body=${enc(body)}`;
     }
 
     function updateWhatsAppLinks(){
-      const usecase = $("usecase").value || "Not specified";
+      const usecase = $("usecase").value || "Evaluation";
       const subject = buildSubject(usecase);
       const body = buildBody();
       const waText = `${subject}\n\n${body}`;
       const waHref = `https://wa.me/${OWNER_PHONE.replace("+","")}?text=${enc(waText)}`;
-
       $("waTop").href = waHref;
-      $("waAcquire").href = waHref;
-      $("waDirect").href = waHref;
+      $("waTransfer").href = waHref;
+      $("waInline").href = waHref;
     }
 
-    // Select buttons
     document.querySelectorAll("button.select").forEach(btn=>{
       btn.addEventListener("click", ()=>{
         const usecase = btn.getAttribute("data-usecase");
@@ -816,46 +799,35 @@ Thank you,</textarea>
       });
     });
 
-    // Update links on input changes
     ["company","name","email","usecase","msg"].forEach(id=>{
       $(id).addEventListener("input", ()=>{ updateMailto(); updateWhatsAppLinks(); });
       $(id).addEventListener("change", ()=>{ updateMailto(); updateWhatsAppLinks(); });
     });
 
-    // Copy message
     $("copyText").addEventListener("click", async (e)=>{
       e.preventDefault();
-      const usecase = $("usecase").value || "Not specified";
+      const usecase = $("usecase").value || "Evaluation";
       const subject = buildSubject(usecase);
       const body = buildBody();
       const text = `${subject}\n\n${body}`;
       try{
         await navigator.clipboard.writeText(text);
-        $("copyText").textContent = "تم النسخ ✓";
-        setTimeout(()=> $("copyText").textContent = "نسخ الرسالة", 1400);
+        $("copyText").textContent = "Copied ✓";
+        setTimeout(()=> $("copyText").textContent = "Copy message", 1400);
       }catch(err){
-        alert("فشل النسخ. انسخ يدويًا من الرسالة.");
+        alert("Copy failed. Please select and copy manually.");
       }
     });
 
-    // Call now
-    $("callNow").addEventListener("click", (e)=>{
-      e.preventDefault();
-      window.location.href = `tel:${OWNER_PHONE}`;
-    });
-
-    // Top CTA scroll
     $("topCta").addEventListener("click", (e)=>{
       e.preventDefault();
       document.querySelector("#contact").scrollIntoView({behavior:"smooth"});
     });
 
-    // Year
     $("yr").textContent = new Date().getFullYear();
-
-    // Init
     updateMailto();
     updateWhatsAppLinks();
   </script>
 </body>
 </html>
+
